@@ -5,19 +5,20 @@ import exit from "../assets/images/icons8-exit-96.png";
 const controlData = [
   {
     id: 1,
-    option: "exit",
+    buttonOption: "exit",
     img: exit,
     className: "",
   },
   {
     id: 2,
-    option: "play",
+    buttonOption: "play",
     img: play,
     className: "w-16 h-16 sm:w-20 sm:h-20",
   },
+
   {
     id: 3,
-    option: "reset",
+    buttonOption: "reset",
     img: reset,
     className: "",
   },

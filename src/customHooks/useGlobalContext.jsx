@@ -10,8 +10,8 @@ const AppProvider = ({ children }) => {
   const [computerScore, setComputerScore] = useState(0);
   const [playerScore, setPlayerScore] = useState(0);
   const [result, setResult] = useState(0);
-  const [playersOption, setPlayersOption] = useState("");
-  const [computerOption, setComputerOption] = useState("");
+  const [playerSelectedOption, setPlayerSelectedOption] = useState("");
+  const [computerSelectedOption, setComputerSelectedOption] = useState("");
 
   return (
     <AppContext.Provider
@@ -24,10 +24,10 @@ const AppProvider = ({ children }) => {
         setComputerScore,
         result,
         setResult,
-        playersOption,
-        setPlayersOption,
-        computerOption,
-        setComputerOption,
+        playerSelectedOption,
+        setPlayerSelectedOption,
+        setComputerSelectedOption,
+        computerSelectedOption,
       }}
     >
       {children}

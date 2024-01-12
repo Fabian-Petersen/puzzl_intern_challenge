@@ -1,7 +1,8 @@
 import Heading from "../components/Heading";
 import ScoreCardContainer from "../components/ScoreCardContainer";
-import PlayOptionsContainer from "./PlayOptionsContainer";
 import ControlsContainer from "../components/ControlsContainer";
+import PlayButtonContainerNoMap from "./PlayButtonContainerNoMap";
+// import PlayButtonContainer from "./PlayButtonContainer";
 
 const GameContainer = () => {
   return (
@@ -11,7 +12,8 @@ const GameContainer = () => {
         title="Rock - Paper - Scissors"
       />
       <ScoreCardContainer />
-      <PlayOptionsContainer />
+      <PlayButtonContainerNoMap />
+      {/* <PlayButtonContainer /> */}
       <div className="bg-gray-200 rounded-lg">
         <ControlsContainer />
       </div>

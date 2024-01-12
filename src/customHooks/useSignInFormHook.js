@@ -21,8 +21,9 @@ const useSignInFormHook = () => {
     }
 
     setPlayerName(inputName);
-    toast.success(`Welcome ${inputName}`);
     navigate("/playgame");
+    toast.info("Press Play to Start");
+    toast.info(`Welcome ${inputName}`);
   };
 
   return { handleSubmit };
