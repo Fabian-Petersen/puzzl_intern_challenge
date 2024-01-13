@@ -1,4 +1,6 @@
-// $ This component captures the player's name and passes it to the useSignInFormHook
+// ? Purpose: This component captures the player's name and passes it to the useSignInFormHook
+// $ The useSignInFormHook then passes the name to the useGlobalContext hook to display the name in the ScoreCardContainer
+
 import useSignInFormHook from "../customHooks/useSignInFormHook";
 import avatar from "../assets/images/jurica-koletic.jpg";
 import Avatar from "./Avatar";
@@ -7,7 +9,7 @@ const SignInForm = () => {
   const { handleSubmit } = useSignInFormHook();
 
   return (
-    <div className="flex flex-col justify-between gap-2 bg-gray-200 p-6 sm:p-4 rounded-md text-textLight w-[15rem] h-[20rem] max-w-[20rem] text-center">
+    <div className="flex flex-col justify-between gap-2 bg-gray-200 p-6 sm:p-6 rounded-md text-textLight w-[16rem] h-[20rem] max-w-[20rem] text-center">
       <h2 className="text-2xl mb-4 text-textLight">Sign In</h2>
 
       <Avatar image={avatar} />

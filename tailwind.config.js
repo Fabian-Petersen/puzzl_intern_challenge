@@ -20,6 +20,9 @@ export default {
         textLight: "#1d2b53",
         facebookGray: "#eff2f5",
       },
+      screens: {
+        xs: "480px",
+      },
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

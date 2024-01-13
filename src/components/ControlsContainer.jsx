@@ -1,3 +1,7 @@
+// ? Purpose: This component is the parent component for the control buttons (play, reset and exit)
+// $ The data is mapped over the controlData array and passed to the ControlButton component
+// $ The props { id, img, buttonOption, className } are destructured from the controlData array and passed to the ControlButton component
+
 import controlData from "../assets/controlData";
 import ControlButton from "./ControlButton";
 

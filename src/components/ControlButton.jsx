@@ -1,10 +1,11 @@
-// $ validate the props passed to the component using prop-types
-// $ The nadle Control Hook manages the state of the game i.e. play, reset and exit
-// $ Each button will call a different custom hook depending on the option passed to it
+// ? Purpose: The component renders the play options component (rock, paper, scissors)
+// $ The component receives three props: img, buttonOption and className to style the middle button differently
+// $ The buttonOption prop identifies the button (play, reset or exit)
+// $ Each button will call the custom hook which handles the logic for the game (play, exit and reset)
+
 import PropTypes from "prop-types";
 import { Tooltip } from "flowbite-react";
 
-// $ Create a component that receives two props: img and the option (which button it is)
 // $ cont... and the className prop to style the play button differently
 import useExitGameHook from "../customHooks/useExitGameHook";
 import useResetGameHook from "../customHooks/useResetGameHook";

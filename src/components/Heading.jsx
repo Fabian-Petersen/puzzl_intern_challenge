@@ -1,3 +1,5 @@
+// ? Purpose: The heading component which passes the title and className props to the Heading component
+
 import PropTypes from "prop-types";
 
 const Heading = ({ title, className }) => {

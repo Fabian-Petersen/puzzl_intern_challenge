@@ -1,3 +1,6 @@
+// $ The Home page when the game is initially started.
+// $ The player is asked to enter their name and then the game begins.
+
 import SignInForm from "../components/SignInForm";
 
 const StartGame = () => {

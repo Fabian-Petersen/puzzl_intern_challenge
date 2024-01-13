@@ -1,3 +1,6 @@
+// $ The PlayGame page is where the game is played.
+// $ The game is played in the GameContainer component.
+
 import GameContainer from "../components/GameContainer";
 
 const PlayGame = () => {

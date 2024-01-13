@@ -1,10 +1,13 @@
+// ? Purpose: To display the score of the players
+// $ The stats are passed from the useGlobalContext hook (playerName, playerScore, computerScore)
+
 import PropTypes from "prop-types";
 import { useGlobalContext } from "../customHooks/useGlobalContext";
 const ScoreCardContainer = () => {
   const { playerName, playerScore, computerScore } = useGlobalContext();
 
   return (
-    <div className="text-[1rem] md:text-[1.2rem] tracking-wider flex justify-between px-0 sm:p-4 capitalize text-textLight">
+    <div className="flex flex-col gap-4 text-[1rem] md:text-[1.2rem] tracking-wider xs:flex xs:flex-row xs:justify-between px-0 sm:p-4 capitalize text-textLight">
       <div className="flex flex-col">
         <p>score : {playerScore}</p>
         <p>Player 1 : {playerName}</p>

@@ -1,3 +1,5 @@
+// ? Purpose: The component renders the image in the login component
+
 import PropTypes from "prop-types";
 
 const Avatar = ({ image }) => {
